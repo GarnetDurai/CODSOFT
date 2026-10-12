@@ -157,6 +157,27 @@ section .title::after {
     display: none;
 }
 
+.project-link {
+    display: block;
+    text-decoration: none;
+    color: inherit;
+    cursor: pointer;
+}
+
+.project-link .card {
+    height: 100%;
+    transition: transform 0.3s ease;
+}
+
+.project-link:hover .card {
+    transform: translateY(-5px);
+}
+
+.project-link:focus-visible {
+    outline: 2px solid crimson;
+    outline-offset: 4px;
+}
+
 .scroll-up-btn {
     position: fixed;
     height: 45px;
